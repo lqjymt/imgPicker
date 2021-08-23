@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
           //没有 权限
           Toast.makeText(MainActivity.this, "没有权限", Toast.LENGTH_SHORT).show();
         }else{
-
-
           //拥有 文件 权限
           Matisse.from(MainActivity.this)
               .choose(MimeType.ofImage())
